@@ -1,0 +1,361 @@
+
+/* General styles */
+
+body {
+	background-color: rgb(230, 241, 255) !important;
+}
+
+.game-canvas {
+	position: relative;
+	display:block;
+}
+
+.game-player {
+	position: absolute;
+	display:block;
+}
+
+.footer {
+	min-height: 50px;
+}
+
+.clearer {
+	clear: both;
+    line-height: 1em;
+}
+
+.imagen_cabecera{
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 0 0 10px rgb(0,0,0);
+    padding-left: 32px;
+    padding-right: 32px;
+
+
+    margin-top: 0px !important;
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+
+	background-image: url(../resources/images/el_pensador_recortado.png);
+  	background-size: fill;
+  	background-repeat: none;
+  	padding-top: 95px;
+    padding-bottom: 70px !important;
+}
+
+.controls {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.radio {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5px;
+  
+}
+
+
+/* Header image styles */
+h2{
+	font-size: 1.75em !important;
+}
+
+#contenedor_principal{
+	background-color: white;
+}
+
+.campus_selection{
+	padding-bottom: 25px !important;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #000000;
+    border-bottom: 1px inset #1172E8;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    max-width: 25em;
+    margin: 35px auto;
+}
+
+#pie_redes{
+	
+	padding-bottom: 10px;
+}
+
+ul.botonesCampus li{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Old campusButton style without Bootstrap
+.campusButton {
+	box-shadow:inset 0px 0px 2px 0px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:6px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	padding:14px 28px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1443b8;
+	width: 220px;
+}*/
+
+.header_image {
+  position: relative;
+}
+
+.header_text_container {
+  position: absolute;
+  top: 45%;
+  left: 3%;
+  width: 100%;
+}
+
+.header_text {
+  text-shadow:0px 4px 0px #1443b8;
+  color:#ffffff;
+  font-family:Verdana;
+  font-size:180%;
+  font-weight:bold;
+  text-decoration:none;
+  border: none;
+  background: none;
+}
+
+
+.campusButton {
+  box-shadow:inset 0px 0px 2px 0px #9fb4f2;
+  background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color:#7892c2;
+  border-radius:6px;
+  border:1px solid #4e6096;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Verdana;
+  font-size:15px;
+  font-weight:bold;
+  padding:14px 28px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #1443b8;
+  min-width: 220px;
+}
+
+.campusButton:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.campusButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* Old wrapper styles without CSS 
+.wrapper{
+	display: inline-grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 60px;
+	grid-row-gap: 60px;
+	margin: 0 25% 3px 25%;
+  opacity: 0;
+}
+*/
+
+.wrapper{
+  margin: 0 25% 3px 25%;
+  opacity: 0;
+}
+
+/* Download button styles */
+.download_container{
+	text-align: center;
+	width: 100%;
+	margin: 50px 0 120px 0;
+	display: inline-block;
+}
+
+.download_btn {
+  font-size: 20px;
+  padding: 12px 30px;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.download_remote{
+	background-color: green;
+}
+
+.download_btn:hover {
+  	background-color: RoyalBlue;
+}
+
+.loading_screen {
+	width: 960px;
+	height: 600px;
+	z-index: 1;
+}
+
+.hidden {
+	display: none;
+}
+
+.showed {
+	display: block;
+}
+
+.relative {
+	position: relative;
+	height: 600px;
+	margin.bottom: 150px;
+}
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* Small devices (landscape phones, 544px and up) */
+/*
+@media (min-width: 544px) {  
+ .download_btn a {font-size:1.5rem;}*/ /*1rem = 16px*/
+/*}*/
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/*@media (min-width: 768px) {  
+  .download_btn a {font-size:2rem;} *//*1rem = 16px*/
+/*}*/
+ 
+/* Large devices (desktops, 992px and up) */
+/*@media (min-width: 992px) { 
+  .download_btn a {font-size:2.5rem;}*/ /*1rem = 16px*/
+/*}*/
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+/*@media (min-width: 1200px) {  
+  .download_btn a {font-size:3rem;}*/ /*1rem = 16px*/    
+/*}*/
+
+
+
+.fade-out-bck {
+	-webkit-animation: fade-out-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: fade-out-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.fade-in-top {
+  -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/**
+ * animation fade-out-bck
+ */
+@-webkit-keyframes fade-out-bck {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes fade-out-bck {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-in-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+/* Unity player styles */
+.webgl-content * {border: 0; margin: 0; padding: 0}
+/*.webgl-content { margin: 50px 0 30px 0; position: absolute; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }*/
+.webgl-content { margin: 50px 0 30px 0; position: absolute; }
+
+.webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.webgl-content .logo {background: url('../resources/TemplateData/progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
+.webgl-content .progress {height: 18px; width: 141px; margin-top: 90px;}
+.webgl-content .progress .empty {background: url('../resources/TemplateData/progressEmpty.Light.png') no-repeat right / cover; float: right; width: 100%; height: 100%; display: inline-block;}
+.webgl-content .progress .full {background: url('../resources/TemplateData/progressFull.Light.png') no-repeat left / cover; float: left; width: 0%; height: 100%; display: inline-block;}
+
+.webgl-content .logo.Dark {background-image: url('../resources/TemplateData/progressLogo.Dark.png');}
+.webgl-content .progress.Dark .empty {background-image: url('../resources/TemplateData/progressEmpty.Dark.png');}
+.webgl-content .progress.Dark .full {background-image: url('../resources/TemplateData/progressFull.Dark.png');}
+
+.webgl-content .footer {margin: 15px 10px 0 0; height: 38px; line-height: 38px; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 18px;}
+.webgl-content .footer .webgl-logo, .title, .fullscreen {height: 100%; display: inline-block; background: transparent center no-repeat;}
+.webgl-content .footer .webgl-logo {background-image: url('../resources/TemplateData/webgl-logo.png'); width: 204px; float: left;}
+.webgl-content .footer .title {margin-right: 15px; float: right; font-weight: bold}
+.webgl-content .footer .fullscreen {margin: 0 25px 0 0; background-image: url('../resources/TemplateData/fullscreen.png'); width: 38px; float: right;}
