@@ -323,58 +323,11 @@
 					</div>
 				</div>
 				
-
-
 				<!-- SECCIÓN DE UNITY -->
-
-				
 
 				<h2 class="campus_selection" id="campus_selection_title">Espere un momento, en breve podrá disfrutar del visor...</h2>
 
-				<!-- Botones de campus -->
-					<!--
-					<div class="container" id="campus_selection_wrapper">
-						<div class="row mb-5 d-flex justify-content-center">	
-							<div class="col-sm-12 col-md-3 d-flex justify-content-center">
-								<button class="campusButton" value="Tafira" onclick="changeCampusJavascript(this.value)">Tafira
-							</div>
-						</div>	
-						<div class="row mb-5 d-flex justify-content-center">
-							<div class="col-sm-12 col-md-3 d-flex justify-content-center">
-								<button class="campusButton" value="San_Cristobal" onclick="changeCampusJavascript(this.value)">San Cristóbal
-							</div>
-						</div>
-						<div class="row mb-5 d-flex justify-content-center">
-							
-							<div class="col-sm-12 col-md-3 d-flex justify-content-center">
-								<button class="campusButton" value="Obelisco" onclick="changeCampusJavascript(this.value)">El Obelisco
-							</div>
-						</div>
-						<div class="row mb-5 d-flex justify-content-center">
-							<div class="col-sm-12 col-md-3 d-flex justify-content-center">
-								<button class="campusButton" value="Montana_Cardones" onclick="changeCampusJavascript(this.value)">Montaña Cardones
-							</div>
-						</div>
-					</div>
-
-
-					<div class="container" id="campus_selection_wrapper">
-						<div class="row mb-5 d-flex justify-content-center">	
-							<div class="col-sm-12 col-md-3 d-flex justify-content-center">
-								<button class="campusButton" value="Tafira" onclick="changeCampusJavascript(this.value)">Tafira
-							</div>
-							<div class="col-sm-12 col-md-3 d-flex justify-content-center">
-								<button class="campusButton" value="San_Cristobal" onclick="changeCampusJavascript(this.value)">San Cristóbal
-							</div>
-							<div class="col-sm-12 col-md-3 d-flex justify-content-center">
-								<button class="campusButton" value="Obelisco" onclick="changeCampusJavascript(this.value)">El Obelisco
-							</div>
-							<div class="col-sm-12 col-md-3 d-flex justify-content-center">
-								<button class="campusButton" value="Montana_Cardones" onclick="changeCampusJavascript(this.value)">Montaña Cardones
-							</div>
-						</div>	
-					</div>
-					-->
+				<!-- Botones de cambio campus -->
 					
 					<div class="container wrapper" id="campus_selection_wrapper">
 						<div class="row d-flex justify-content-center">
@@ -395,28 +348,18 @@
 						</div>	
 					</div>
 					
-					<!--
-					<div class="wrapper" id="campus_selection_wrapper">
-						<div><button class="campusButton" value="Tafira" onclick="changeCampusJavascript(this.value)">Tafira</div>
-						<div><button class="campusButton" value="San_Cristobal" onclick="changeCampusJavascript(this.value)">San Cristóbal</div>
-						<div><button class="campusButton" value="Obelisco" onclick="changeCampusJavascript(this.value)">El Obelisco</div>
-						<div><button class="campusButton" value="Montana_Cardones" onclick="changeCampusJavascript(this.value)">Montaña Cardones</div>
-					</div>
-					-->
-
-				<!-- Fin de botones de campus -->
+				<!-- Fin de botones de cambio de campus -->
 
 				<!-- Reproductor web de Unity -->
 
-				<!-- Script para ocultar la pantalla de carga tras unos segundos y mostrar los botones de selección de campus -->
-
-				
 				<div class="relative" id ="unity_player" style="position: relative; height:600px; margin-bottom:150px">
 
 					<!-- Pantalla de carga -->
+					<!--
 					<div class="webgl-content loading_screen" id="loading_screen" style="position: absolute; width: 100%; height: 100%; z-index: 1">
 						<img src="./resources/images/pantalla_carga.png">
 					</div>
+					-->
 
 					<!-- Reproductor interactivo -->
 					<div class="webgl-content" style="position: absolute">
@@ -457,6 +400,8 @@
 
                 <!-- Fin de botones de descarga de App -->
 
+                <!-- Script para ocultar la pantalla de carga tras unos segundos y mostrar los botones de selección de campus -->
+
                 <script type="text/javascript">
 					
 					if(isMobileDevice()){
@@ -473,8 +418,8 @@
 					}else{
 						setTimeout( 
 							function(){  
-								let loadingScreen = document.getElementById("loading_screen");
-								loadingScreen.classList.add("fade-out-bck");
+								//let loadingScreen = document.getElementById("loading_screen");
+								//loadingScreen.classList.add("fade-out-bck");
 
 								let campusSelectionTitle = document.getElementById("campus_selection_title").innerHTML = "Seleccione un campus a visualizar";
 
@@ -492,8 +437,6 @@
 				</script>
 
                 <!-- FIN DE SECCIÓN DE UNITY -->
-
-
 
 				<div class="clearer"></div>
 
