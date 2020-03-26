@@ -8,7 +8,7 @@
     
     <script src="Build/UnityLoader.js"></script>
     <script>
-    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build Proyecto Visor ULPGC.json");
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build Visor Campus ULPGC.json");
     </script>
 
     <!-- JQuery -->
@@ -46,7 +46,7 @@
 
   	<!-- Return to top button -->
     <div class="d-flex justify-content-center">
-          <button type="button" class="btn btn-primary btn-circle btn-xl mt-3 mb-5"><i class="fa fa-arrow-up"></i></button>
+          <button onclick="scrollToTop()" type="button" class="btn btn-primary btn-circle btn-xl mt-3 mb-5"><i class="fa fa-arrow-up"></i></button>
     </div>
 
   	<!-- Footer -->
@@ -100,6 +100,20 @@
 
   	</footer>
   	<!-- Footer -->
+
+  	<script type="text/javascript">
+
+  		function scrollToTop(){
+  			let gameContainer = document.getElementById(gameContainer);
+
+  			gameContainer.scrollIntoView({
+      			behavior: 'smooth', block:'center', 
+
+    		});
+
+  		}
+
+  	</script>
     
   </body>
   
