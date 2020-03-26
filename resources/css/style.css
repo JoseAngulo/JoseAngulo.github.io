@@ -40,8 +40,9 @@ body{
 }
 
 .building_bg{
-    background-image: url("resources/buildings_data/building_images/logo_ulpgc.jpg");
-    opacity: 0.2;
+    background-image: url("../buildings_data/building_images/logo_ulpgc.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .webgl-content * {border: 0; margin: 0; padding: 0}
