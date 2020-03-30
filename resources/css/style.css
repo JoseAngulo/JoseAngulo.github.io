@@ -1,8 +1,10 @@
+
 body{
 	background-color: rgb(230, 241, 255) !important;
 
 
 }
+
 .container{
 	background-color: 
 }
@@ -43,6 +45,10 @@ body{
     background-image: url("../buildings_data/building_images/logo_ulpgc.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.display_none{
+    display: none!important;
 }
 
 .webgl-content * {border: 0; margin: 0; padding: 0}
