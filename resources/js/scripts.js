@@ -8,7 +8,7 @@ function scrollToTop(){
 	});
 
 	let building_info_container = document.getElementById("scroll-arrow-button");
-	building_info_container.classList.add("display_none");
+	building_info_container.classList.add("d-none");
 
 }
 
