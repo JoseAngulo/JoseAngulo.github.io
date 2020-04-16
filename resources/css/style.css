@@ -1,22 +1,20 @@
 
 body{
-	background-color: rgb(230, 241, 255) !important;
-
-
+    background-color: rgb(230, 241, 255) !important;
 }
 
 .container{
-	background-color: 
+    background-color: 
 }
 
 .game-canvas{
-	position: relative;
-	display:block;
+    position: relative;
+    display:block;
 }
 
 .game-player{
-	position: absolute;
-	display:block;
+    position: absolute;
+    display:block;
 }
 
 .btn-circle {
@@ -48,7 +46,18 @@ body{
 .gameContainer{
     margin: 0 auto; 
     width: 100% ; 
+    height: 850px;
     max-height: 850px;
+}
+
+.scaleDownGameContainer{
+    height: 0px;
+    transition: all, 0.5s ease;
+}
+
+.scaleUpGameContainer{
+    height: 850px;
+    transition: all, 0.5s ease;
 }
 
 .webgl-content * {border: 0; margin: 0; padding: 0}
