@@ -36,10 +36,11 @@
   </head>
   
   <body>
-  	<div class="row">
-  		<div id="gameContainer" class="gameContainer mb-3"></div>
+  	<div id="gameContainer" class="container-fluid gameContainer"></div>
 
-  	</div>
+    <div class="d-none position-fixed fixedArrowButton " id="fixedArrowButton">
+      <button onclick="scrollToTop()" type="button" class="btn btn-primary btn-circle btn-xl mt-3 mb-5"><i class="fa fa-arrow-up"></i></button>
+    </div>
 
     <div class="building_bg d-none"  id="building_bg">
       <div class="row">
@@ -55,7 +56,7 @@
     </div>
 
   	<!-- Footer -->
-  	<footer class="page-footer font-small blue darken-3">
+  	<footer class="d-none page-footer font-small blue darken-3" id="footer">
 
   		<!-- Footer Elements -->
   		<div class="container">
