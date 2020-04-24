@@ -1,20 +1,20 @@
 
 function scrollToTop(){
-	let gameContainer = document.getElementById("gameContainer");
+	let gameMainWrapper = document.getElementById("gameMainWrapper");
 
-    gameContainer.removeEventListener("transitionend", showFixedArrowButton, false);
-    gameContainer.addEventListener("transitionend", hideBuildingBackground, false);
+    gameMainWrapper.removeEventListener("transitionend", showFixedArrowButton, false);
+    gameMainWrapper.addEventListener("transitionend", hideBuildingBackground, false);
 
-    gameContainer.scrollIntoView({
+    gameMainWrapper.scrollIntoView({
         behavior: 'smooth', block:'start', 
 
     });
 
     document.getElementById("fixedArrowButton").classList.add("d-none");
     document.getElementById("footer").classList.add("d-none");
-    gameContainer.classList.remove("d-none");
-    gameContainer.classList.remove('scaleDownGameContainer');
-    gameContainer.classList.add('scaleUpGameContainer');
+    gameMainWrapper.classList.remove("d-none");
+    gameMainWrapper.classList.remove('scaleDownGameContainer');
+    gameMainWrapper.classList.add('scaleUpGameContainer');
 
 }
 
