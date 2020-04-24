@@ -36,7 +36,19 @@
   </head>
   
   <body>
-  	<div id="gameContainer" class="container-fluid gameContainer"></div>
+
+    <div class="container-fluid gameMainWrapper" style="position: relative; height: 100vh;">
+  	  <div id="gameContainer" class="container-fluid gameContainer"></div>
+      <div class="loading-bg-color container-fluid loading-screen" id="loading-screen">
+
+        <img src="resources/images/loading_screen.png" class="loading-image">
+        
+        <div id="spinner_wrapper" class="overflow-hidden">
+          <img src="resources/images/loading_spinner.svg" class="loading-spinner img-responsive" alt="Spinner de carga">
+        </div>
+        
+      </div>
+    </div>
 
     <div class="d-none position-fixed fixedArrowButton " id="fixedArrowButton">
       <button onclick="scrollToTop()" type="button" class="btn btn-primary btn-circle btn-xl mt-3 mb-5"><i class="fa fa-arrow-up"></i></button>
