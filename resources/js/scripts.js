@@ -1,7 +1,6 @@
 
 window.addEventListener("DOMContentLoaded", hideUnityPlayer);
 
-
 function hideUnityPlayer(){
 
     if(isMobileDevice()){
@@ -14,6 +13,7 @@ function hideUnityPlayer(){
 function isMobileDevice() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 };
+
 
 function scrollToTop(){
 	let gameMainWrapper = document.getElementById("gameMainWrapper");
@@ -45,8 +45,6 @@ function showFixedArrowButton(){
     document.getElementById("fixedArrowButton").classList.remove("d-none");
     
 }
-
-
 
 
 
