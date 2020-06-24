@@ -46,5 +46,23 @@ function showFixedArrowButton(){
     
 }
 
+function fillBuildingInfo(url){
 
+    $.ajax({
+
+        url: url,
+        data: null,
+        type: 'get',
+        success: function(response){
+           document.getElementById("building_title").innerHTML = response.titulo;
+            document.getElementById("building_campus").innerHTML = response.ubicacion;
+            document.getElementById("building_description").innerHTML = response.descripcion;
+            $("#building_url").attr("href", response.enlace);
+            $("#building_image").attr("src", response.enlace_imagen);
+            $("#building_image_link").attr("href", response.enlace);
+        }
+
+    })
+
+}
 
