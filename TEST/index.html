@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Demo Visor ULPGC</title>
+    
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build Web Visor ULPGC.json");
+    </script>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/js/mdb.min.js"></script>
+    <!-- Internal JS -->
+    <script type="text/javascript" src="resources/js/scripts.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Internal Styles -->
+    <link href="./resources/css/style.css" rel="stylesheet">
+
+  </head>
+  
+  <body>
+
+    <div class="gameMainWrapper" id="gameMainWrapper">
+  	  <div id="gameContainer" class="container-fluid gameContainer"></div>
+      <div class="loading-bg-color container-fluid loading-screen" id="loading-screen">
+
+        <img src="resources/images/loading_screen.png" class="loading-image" id="loading-image">
+        
+        <div id="spinner_wrapper" class="overflow-hidden">
+          <img src="resources/images/loading_spinner.svg" class="loading-spinner img-responsive" alt="Spinner de carga">
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="d-none position-fixed fixedArrowButton " id="fixedArrowButton">
+      <button onclick="scrollToTop()" type="button" class="btn btn-primary btn-circle btn-xl mt-3 mb-5"><i class="fa fa-arrow-up"></i></button>
+    </div>
+
+    <div class="building_bg d-none"  id="building_bg">
+      <div class="row">
+        <div class="container building_info" id="building_info"></div>
+        	<div class="container my-5 py-5">
+
+				<!--Section: Content-->
+				<section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+					<!--Grid row-->
+					<div class="row">
+
+						<!--Grid column-->
+						<div class="col-md-6 mb-4 mb-md-0">
+
+							<h2 class="font-weight-bold text-center mb-3 text-primary" id="building_title"></h2>
+
+							<h5 class="text-muted font-weight-bold text-center mb-4" id="building_campus"></h5>
+
+							<p class="text-muted font-weight-bold text-center building_description" id="building_description"></p>
+
+							<div class="d-flex justify-content-center">
+								<a class="btn btn-info btn-md ml-0" href="" target="_blank" role="button" id="building_url"><i class="fa fa-magic ml-2">Visita la página</i></a>
+							</div>
+							
+
+						</div>
+						<!--Grid column-->
+
+						<!--Grid column-->
+						<div class="col-md-6 mb-4 mb-md-0">
+
+							<!--Image-->
+							<div class="view overlay z-depth-1-half">
+								<img src="" class="img-fluid" alt="Imagen edificio" id="building_image">
+								<a href="" target="_blank" id="building_image_link">
+									<div class="mask rgba-white-light"></div>
+								</a>
+							</div>
+
+						</div>
+						<!--Grid column-->
+
+					</div>
+					<!--Grid row-->
+
+				</section>
+				<!--Section: Content-->
+
+			</div>
+      </div>
+
+      <!-- Return to top button -->
+      <div class="d-flex justify-content-center" id="scroll-arrow-button">
+        <button onclick="scrollToTop()" type="button" class="btn btn-primary btn-circle btn-xl mt-3 mb-5"><i class="fa fa-arrow-up"></i></button>
+      </div>
+
+    </div>
+
+  	<!-- Footer -->
+  	<footer class="d-none page-footer font-small blue darken-3" id="footer">
+
+  		<!-- Footer Elements -->
+  		<div class="container">
+
+  			<!-- Grid row-->
+  			<div class="row">
+
+  				<!-- Grid column -->
+  				<div class="col-md-12 py-5">
+  					<div class="mb-5 flex-center">
+
+  						<!-- Facebook -->
+  						<a class="fb-ic">
+  							<i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+  						</a>
+  						<!-- Twitter -->
+  						<a class="tw-ic">
+  							<i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+  						</a>
+  						<!-- Google +-->
+  						<a class="gplus-ic">
+  							<i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+  						</a>
+  						<!--Linkedin -->
+  						<a class="li-ic">
+  							<i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+  						</a>
+  						<!--Instagram-->
+  						<a class="ins-ic">
+  							<i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+  						</a>
+  					</div>
+  				</div>
+  				<!-- Grid column -->
+
+  			</div>
+  			<!-- Grid row-->
+
+  		</div>
+  		<!-- Footer Elements -->
+
+  		<!-- Copyright -->
+  		<div class="footer-copyright text-center py-3">© 2020 Copyright:
+  			<a href="https://www.ulpgc.es/" target="_blank"> Universidad de Las Palmas de Gran Canaria. ULPGC</a>
+  		</div>
+  		<!-- Copyright -->
+
+  	</footer>
+  	<!-- Footer -->
+
+  	</body>
+  
+</html>
