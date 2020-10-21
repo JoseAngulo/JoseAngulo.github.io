@@ -1,7 +1,7 @@
 {
   "titulo": "Apartamentos de Profesores Universitarios",
   "ubicacion": "Campus de Tafira",
-  "descripcion": "El complejo está compuesto por cuatro bungalós, ubicados en el interior del Campus de Tafira, que están equipados para el alojamiento de profesores invitados a la universidad. Su privilegiada ubicación confiere a estos bungalós un ambiente de tranquilidad ideal para el trabajo, además de estar junto al mayor número de Escuelas, Facultades y laboratorios de la Universidad de Las Palmas de Gran Canaria.",
+  "descripcion": "El complejo está compuesto por tres bungalós, ubicados en el interior del Campus de Tafira, que están equipados para el alojamiento de profesores invitados a la universidad. Su privilegiada ubicación confiere a estos bungalós un ambiente de tranquilidad ideal para el trabajo, además de estar junto al mayor número de Escuelas, Facultades y laboratorios de la Universidad de Las Palmas de Gran Canaria.",
   "enlace": "https://residenciasuniversitarias.ulpgc.es/bungalows/",
-  "enlace_imagen": "https://joseangulo.github.io/StreamingAssets/Buildings/common/default/default.jpg"
+  "enlace_imagen": "https://joseangulo.github.io/StreamingAssets/Buildings/Tafira/images/bungalows_profesores.jpg"
 }
